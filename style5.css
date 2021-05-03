@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 8%;
+}
+
+.navbar-style{
+    box-shadow: 0 5px 10px #7e7879;
+    text-transform: uppercase; 
+}
+
+.logo{
+    height: 53px;
+    padding: 0px 0px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 10s;
+}
+@keyframes anime {
+    0%   {background-color:#F2EA02; left:0px; top:0px;}
+    25%  {background-color:#FF0099; left:500px; top:0px;}
+    50%   {background-color:#00FFFF; left:0px; top:0px;}
+    
+  }
+.icon-bar{
+    background: darkblue;
+}
+li a{
+    color: #d90429;
+}
+body{
+    padding: 0px;
+    margin: 0px;  
+    font-family: sans-serif;
+  
+   }   
+
+
+ .container{
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+    }
+    /* contact form css */
+
+
+    #contact-section{
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url("http://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+
+    #contact-section .container h2{
+      text-align: center;
+       text-decoration: underline;
+        /* text-decoration-color:red; */
+        text-underline-position: under;
+        color: rgb(238, 235, 235);
+        letter-spacing: 2px;
+        
+    }
+
+    
+
+    #contact-section .container p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+       margin-right: auto; 
+       padding-bottom: 3%;
+       color: #fff;
+       letter-spacing:3px;
+    }
+
+    .contact-form i.fa{
+      /* color: red; */
+      /* color: #fff; */
+      font-size: 22px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 80%;
+      margin: 2%;
+      /* border: 2px solid #fff; */
+      cursor: pointer;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+    }
+    
+    .contact-form i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: white;
+    }
+     
+      .contact-form{
+        display: grid;
+        grid-template-columns: auto auto;
+         }
+      
+      .form-info{
+        font-size: 16px;
+        font-style: italic;
+        color: white;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 10px;
+        margin:10px;
+        width: 70%;
+        background-color:rgba(136, 133, 133, 0.5);
+        color: white;
+        border: none;
+        outline:none;
+      }
+
+      input::placeholder{
+        color: white;
+      }
+    
+       textarea{
+      padding: 10px;
+      margin: 10px;     
+      width: 70%;
+      background-color:rgba(136, 133, 133, 0.5);
+      color: white;
+      border: none;
+      outline:none;
+     }
+     textarea::placeholder{
+       color: white;
+     }
+     
+      
+    
+      .submit{
+      width: 40%;
+      background: none;
+      padding: 4px;
+      outline: none;
+       /* border: 1px solid #fff;
+      color: #fff; */
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 33px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 3%;
+      border:2px solid rgb(190, 190, 190);
+      color: rgb(190, 190, 190);
+     }
+
+     .submit:hover{
+           border: 1px solid #fff;
+      color: #fff;
+      cursor: pointer;
+     }
+
+        /* media queries */
+    @media (max-width: 768px){
+
+ #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      #contact-section .submit{
+
+        width: 60%;
+      }
+
+  }
+  body{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.footer{
+    background: black;
+    color:white;
+    height:1000px;
+    position:relative;
+}
+.footer .footer-content{
+    height:900px;
+    display:flex;
+}   
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 50px;    
+}
+.footer .footer-bottom1{
+    color:rgb(185, 181, 181);
+    height: 30px;
+    position: absolute;
+    bottom:15px;
+    left:50px;
+    padding-top: 20px;
+}
+.footer .footer-bottom2{
+    color:rgb(185, 181, 181);
+    height:30px;
+    position:absolute;
+    bottom:15px;
+    right:30px;
+    padding-top:20px;
+}
